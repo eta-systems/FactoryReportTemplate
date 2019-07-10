@@ -13,6 +13,11 @@
 %----------------------------------------------------------------------------------------
 \documentclass[a4paper,12pt]{article}
 
+% Font Settings
+\usepackage[sfdefault,ultralight]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+
 \usepackage{siunitx}         	% si{} units for 12.4\si{\Volt}
 \usepackage{graphicx}  			% graphics
 \usepackage{amsmath}  			% for certain math elements
@@ -64,6 +69,7 @@
 \begin{center}
 	\begin{tabular}{l r}
 		Serial Number & REPLACE-SERIAL-NUMBER \\
+		PCB Version & REPLACE-PCB-VERSION \\
 		Date of Test: & \today \\
 		Operator & REPLACE-OPERATOR \\
 		Script Version: & REPLACE-SCRIPT-VERSION \\
